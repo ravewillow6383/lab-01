@@ -1,0 +1,58 @@
+@media(min-width: 768px){
+    #cellC{
+        background-color:#CFD1D0;
+    }
+    #cellD{
+        background-color: #B3D1C4;
+    }
+    #cellE{
+        border-left: none;
+        background-color:#C0FDFB;
+    }
+    #cellH{
+        border-right: none;
+        background-color:#DAFFEF;
+    }
+    
+    #cellI{
+        width:79.166666666667%;
+        height:19.53125%;
+        background-color:#7B2D26;
+    }
+    #cellF{
+        background-color:#19535F;
+    }
+    #cellG{
+        background-color:#0B7A75;
+    }
+ 
+}
+@media(max-width: 767px){
+    #cellC{
+        background-color:#FFA0FD;
+    }
+    #cellD{
+        background-color: #58355E;
+    }
+    #cellE{
+        border-left: none;
+        background-color:#E952DE;
+    }
+    #cellH{
+        border-right: none;
+        background-color:#fafafa;
+    }
+    
+    #cellI{
+        width:100%;
+        height:7.6190476190476%;
+        background-color:red;
+    }
+    #cellF{
+        background-color:orange;
+    }
+    #cellG{
+        background-color:indigo;
+    }
+ 
+}
