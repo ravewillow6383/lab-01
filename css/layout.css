@@ -1,72 +1,170 @@
- 
-@media(min-width: 768px){
-body{
-    width: 960px;
-    height:700px;
-    }
-header{
-    width: 100%;
-    height:13.020833333333%;
-    line-height: 100px;
-    background-color:#5D737E;
-}
-article{
-    width: 20.833333333333%;
-    height:78.125%;
-    line-height: 600px;
-    float:left;
-    background-color: #64B6AC;
-}
-.container {
-height:32.552083333333%;
-width: 79.166666666667%;
-float:left;
-line-height: 250px;
-}
-.cell{
-width:25%;
-height:100%;
-border-top: none;
-border-bottom: none;
-}
-.upperCell{
-    width:39.583333333333%;
-    height:26.041666666667%;
-    line-height: 200px;
-}
-}
-@media(max-width: 767px){
-    body{
-    width: 480px;
-    height:1050px;
-    }
-header{
-    width: 100%;
-    height:7.14285714286%;
-    line-height: 75px;
-    background-color:#EC0B43;
-}
-article{
-    width: 100%;
-    height:14.2857142857%;
-    line-height:150px;
-    float:left;
-    background-color: #FFF689;
-}
-.container {
-height:47.619047619048%;
-line-height: 250px;
-width: 100%;
-float:left;
-}
-.cell{
-width:50%;
-height:50%;
-}
-.upperCell{
-width:100%;
-height:11.904761904762%;
-line-height: 152px;
-}
+@media(min-width: 480px){
 
-}
+    .main {
+    display: grid;
+    grid-template-rows: 75px 150px 125px 125px 240px 240px 80px;
+    grid-auto-columns: 250px 250px;
+    }    
+    
+        
+    #cellA {
+        grid-column: 1/3;
+        grid-row-start: 1;
+    }
+    
+    #cellB {
+        grid-column: 1/3;
+        grid-row-start: 2;
+    
+    }
+    
+    #cellC {
+        grid-column: 1/3;
+        grid-row-start: 3;
+    
+    }
+    
+    #cellD {
+        grid-column: 1/3;
+        grid-row-start: 4;    
+    
+    
+    }
+    #cellE{
+        grid-column: 1/2;
+        grid-row-start: 5;
+    
+    }
+    
+    #cellF {
+        grid-column: 2/3;
+        grid-row-start: 5;    
+    
+    }
+    
+    #cellG {
+        grid-column:1/2; 
+        grid-row-start: 6;        
+    
+    }
+    
+    #cellH{
+        grid-column: 2/3;
+        grid-row-start: 6;    
+    
+    }
+    
+    #cellI {
+        grid-column: 1/3;
+        grid-row-start: 7;    
+    }
+    }
+    
+    /* tablet view */
+     @media(min-width:550px) and (max-width: 767px) {
+    
+    .main {
+        display: grid;
+        grid-template-rows: 100px 100px 200px 250px 150px;
+        grid-auto-columns: 190px 190px 190px 190px;
+        }
+        #cellA {
+            grid-column: 1/5;
+            grid-row-start: 1;        
+        }
+        
+        #cellB {
+            grid-column: 1/5;
+            grid-row: 2;        
+        }
+        
+        #cellC {
+            grid-column: 1/3;
+            grid-row-start: 3;        
+        }
+        
+        #cellD {
+            grid-column: 3/5;
+            grid-row-start: 3;            
+        }
+        #cellE{
+            grid-column: 1;
+            grid-row: 4;
+        }
+        
+        #cellF {
+            grid-column: 2;
+            grid-row: 4;
+        }
+        
+        #cellG {
+            grid-column:3; 
+            grid-row: 4;    
+        }
+        
+        #cellH{
+            grid-column: 4;
+            grid-row-start: 4;
+        }
+        
+        #cellI {
+            grid-column: 1/5;
+            grid-row: 5;
+        }
+    } 
+    
+    @media(min-width: 768px) {
+    
+    .main {
+    display: grid;
+    grid-template-rows: 100px 200px 250px 150px;
+    grid-auto-columns: 200px 190px 190px 190px 190px;
+    
+    }
+    
+    #cellA {
+        grid-column: 1/6;
+        grid-row-start: 1;    
+    }
+    
+    #cellB {
+        grid-column: 1;
+        grid-row: 2/6;    
+    }
+    
+    #cellC {
+        grid-column: 2/4;
+        grid-row-start: 2;    
+    }
+    
+    #cellD {
+        grid-column: 4/6;
+        grid-row-start: 2;       
+    }
+ 
+    #cellE{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    #cellF {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    
+    #cellG {
+        grid-column:4; 
+        grid-row: 3;    
+    }
+    
+    #cellH{
+        grid-column: 5;
+        grid-row-start: 3;
+    }
+    
+    #cellI {
+        grid-column: 2/6;
+        grid-row: 4;
+    }
+    
+}   

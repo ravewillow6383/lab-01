@@ -3,13 +3,16 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-div, header, article {
-    border:1px solid black;
-    float: left;
-}
-body{
+.main {
+    width: 90%;
     margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
+    max-width: 960px;
+    min-width: 480px;
 }
 
+[class *= 'col-'] {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
